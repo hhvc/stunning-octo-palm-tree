@@ -32,9 +32,10 @@ public class PuntosService {
     
     public void distancia(Puntos Z){
         
-        float laDistancia =  (float) Math.sqrt(Math.pow(Z.getPuntoBX()-Z.getPuntoAX(), 2) + Math.pow(Z.getPuntoBY()-Z.getPuntoAY(), 2)) ; 
+        double laDistancia = Math.sqrt(Math.pow(Z.getPuntoBX()-Z.getPuntoAX(), 2) + Math.pow(Z.getPuntoBY()-Z.getPuntoAY(), 2)) ; 
         
         System.out.println("\nLa distancia entre el punto A y el punto B es de: "+laDistancia + " en vaya a saber qué medida....");
         
+        System.out.println("\nLa distancia entre el punto A y el punto B es de: "+ Math.sqrt(Math.pow(Z.getPuntoBX()-Z.getPuntoAX(), 2) + Math.pow(Z.getPuntoBY()-Z.getPuntoAY(), 2)) + " en vaya a saber qué medida....");
     }
 }
